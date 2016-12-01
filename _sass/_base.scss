@@ -83,6 +83,11 @@ aside {
         &:focus {
             color: darken($theme-primary, 10%);
         }
+        img {
+            display: inline;
+            height: 100%;
+            margin-right: 10px;
+        }
     }
     .nav {
         > li {
@@ -177,7 +182,7 @@ header {
                 font-weight: 300;
                 color: rgba(white, .7);
                 font-size: 16px;
-                margin-bottom: 50px;
+                margin-bottom: 20px;
             }
         }
     }
@@ -199,6 +204,10 @@ header {
                     max-width: 80%;
                     margin-left: auto;
                     margin-right: auto;
+                }
+                .container {
+                    max-width: 80%;
+                    margin-bottom: 20px;
                 }
             }
         }
@@ -284,6 +293,10 @@ header {
     }
 }
 
+.publications {
+    background-color: #f5f5f5 !important;
+}
+
 // Bootstrap Overrides
 .text-primary {
     color: $theme-primary;
@@ -292,6 +305,10 @@ header {
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
+}
+
+.list-group-item {
+    background-color: inherit;
 }
 
 // Button Styles
@@ -313,6 +330,16 @@ header {
 
 .btn-xl {
     padding: 15px 30px;
+}
+
+.btn-extlink {
+    width: 140px;
+    padding: 15px 0px;
+    img {
+        vertical-align: top;
+        margin-right: 5px;
+        height: 20px;
+    }
 }
 
 // Contact
