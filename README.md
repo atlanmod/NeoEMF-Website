@@ -1,14 +1,19 @@
-# Creative Theme for Jekyll
+# Source Code for NeoEMF Website
 
-A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+This repository contains the source code for the [NeoEMF Website](www.neoemf.com). It is hosted on [NeoEMF gh-pages](https://github.com/atlanmod/NeoEMF/tree/gh-pages).
 
-Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
-The theme includes a number of rich features and plugins that you can use as a great boilerplate for your next Jekyll project! 
+## Build
 
-See it live in action at <https://volny.github.io/creative-theme-jekyll/>
+To build this project you need to have [Jekyll](https://jekyllrb.com/) installed.
+    gem install jekyll
+Move to the project root directory and execute
+    bundle exec jekyll serve
+This will build a local version of the website in the *_site* folder, and start a local server accessible at [localhost:4000](localhost:4000) that allows you to preview your changes. Once you are done copy the content of the *_site* folder at the root of [NeoEMF gh-pages](https://github.com/atlanmod/NeoEMF/tree/gh-pages) branch.
 
-## To use the Creative Theme template in your project
+## Known Issues
 
-- Start by adding your info in `_config.yml`
-- In `_layouts/front.html` reorder or remove section as you prefer.
+Ease the deployement of the site with a script that pushes the changes directly to NeoEMF gh-pages.
 
+## Acknowledgement
+
+The site is based on the Jekyll theme [creative theme](http://jekyllthemes.org/themes/creative-theme/) licensed under the Apache 2 License and available on [Github](https://github.com/volny/creative-theme-jekyll).
