@@ -14,6 +14,16 @@ This will build a local version of the website in the *_site* folder, and start 
 
 ## Known Issues
 
+If Jekyll server crashes and prints this error on restart
+    
+    FATAL: Listen error: unable to monitor directories for changes.
+
+Then run the following command and restart the server
+
+    echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+## TODO
+
 Ease the deployement of the site with a script that pushes the changes directly to NeoEMF gh-pages.
 
 ## Acknowledgement
