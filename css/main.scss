@@ -37,21 +37,25 @@
 $theme-primary: #3498DB;
 $theme-dark: #303030;
 
-#publications {
-        .publications {
-                padding: 20px;
-        }
-        .list-group-item-heading {
-                font-size: 22px;
-                font-weight: 600;
-        }
-        .list-group-item-text {
-                font-size: 14px;
-        }
-}
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
         "base"
 ;
+
+#publications {
+  .publications {
+    padding: 20px;
+  }
+  .list-group-item-heading {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .list-group-item-text {
+    font-size: 14px;
+  }
+}
+
+#team {
+  background-color: $grey-color-light;
+}
