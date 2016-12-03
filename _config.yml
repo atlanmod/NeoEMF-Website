@@ -1,5 +1,5 @@
 # Site settings
-title: NeoEMF - Scalable Persistence for EMF Models
+title: NeoEMF
 email: neoemf@googlegroups.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
