@@ -37,6 +37,10 @@
 $theme-primary: #3498DB;
 $theme-dark: #303030;
 
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
