@@ -47,6 +47,7 @@ $grey-color-dark:  darken($grey-color, 25%);
         "base"
 ;
 
+// Sections
 #publications {
   .publications {
     padding: 20px;
@@ -62,4 +63,13 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 #team {
   background-color: $grey-color-light;
+}
+
+// Some spacing between same elements
+.row + .row {
+  margin-top: 20px;
+}
+
+.header-content-inner .btn {
+  margin: 10px;
 }
