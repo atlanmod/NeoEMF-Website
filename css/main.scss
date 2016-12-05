@@ -34,12 +34,11 @@
 // }
 
 // variables.less
+$theme-primary-light: #F0FCFF;
 $theme-primary: #3498DB;
-$theme-dark: #303030;
+$theme-primary-dark: #212D39;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$theme-dark: #2F2F2F;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -47,7 +46,7 @@ $grey-color-dark:  darken($grey-color, 25%);
         "base"
 ;
 
-// Sections
+// Section Styles
 #publications {
   .publications {
     padding: 20px;
@@ -62,7 +61,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 }
 
 #team {
-  background-color: $grey-color-light;
+  background-color: $theme-primary-light;
 }
 
 // Some spacing between same elements
@@ -72,4 +71,9 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 .header-content-inner .btn {
   margin: 10px;
+}
+
+// Button Styles
+.btn-info {
+  @include button-variant(white, lighten($theme-primary-dark, 7%), lighten($theme-primary-dark, 7%));
 }
