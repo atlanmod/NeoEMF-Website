@@ -1,2 +1,8 @@
+### Jekyll
 .sass-cache
 _site
+*.lock
+
+### IntelliJ
+.idea
+*.iml
