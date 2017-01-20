@@ -28,6 +28,14 @@
         }
     });
 
+    // Fit Text Plugin for Main Header
+    $("h1").fitText(
+        1.2, {
+            minFontSize: '24px',
+            maxFontSize: '48pt'
+        }
+    );
+
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();
     sr.reveal('.sr-icons', {
