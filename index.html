@@ -108,9 +108,9 @@
                 <h3 class="section-heading">Graphs, Maps, or Columns!</h3>
                 <p>NeoEMF provides three backend which are able to store your models:</p>
                 <ul class="list-group">
-                    <li class="list-group-item"><strong>NeoEMF/Graph</strong>: graphs are awesome!</li>
-                    <li class="list-group-item"><strong>NeoEMF/Map</strong>: maps are so fast!</li>
-                    <li class="list-group-item"><strong>NeoEMF/Column</strong>: much distribution, such wow, much appreciate</li>
+                    <li class="list-group-item"><strong>NeoEMF/Graph</strong>: use the power of graph query language to compute model queries efficiently! Models are represented using vertices, edges, and properties, and can be efficiently queried using the <a href="https://github.com/atlanmod/Mogwai">Mogwaï</a>!</li>
+                    <li class="list-group-item"><strong>NeoEMF/Map</strong>: serialize your model into in-memory/on-disk maps to speed-up model access and update using the standard EMF API!</li>
+                    <li class="list-group-item"><strong>NeoEMF/Column</strong>: you want to execute model transformations on very large models? Use NeoEMF/Column to store your model into a distributed wide column database and transform it using <a href="https://github.com/atlanmod/ATL_MR">ATL-MR</a>!</li>
                 </ul>
                 <div class="center-block text-center">
                     <a href="https://www.github.com/atlanmod/NeoEMF/wiki/Get-Started" target="_blank" class="btn btn-default btn-xl">Get Started!</a>
@@ -135,44 +135,44 @@
                 <div class="service-box">
                     <i class="fa fa-4x fa-coffee wow bounceIn text-primary"></i>
                     <h3>Lazy-Loading</h3>
-                    <p class="text-muted">Etiam lacus nunc, egestas ac diam at, congue feugiat felis. In mattis tellus lorem, nec luctus felis ullamcorper a. In erat velit, fringilla condimentum ligula sit amet, mollis vulputate dui. </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-history wow bounceIn text-primary" data-wow-delay=".1s" aria-hidden="true"></i>
-                    <h3>Caching</h3>
-                    <p class="text-muted">Morbi volutpat ipsum arcu, id sagittis dolor mollis a. Integer commodo nisi imperdiet justo gravida sagittis. Vivamus tristique sed odio ac ornare. Curabitur fermentum dui massa, eu molestie dui vulputate sit amet.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-download wow bounceIn text-primary" data-wow-delay=".2s" aria-hidden="true"></i>
-                    <h3>Auto-Commit</h3>
-                    <p class="text-muted">Praesent pellentesque a quam ac lacinia. Vivamus pharetra, lacus at aliquet vehicula, sem magna viverra nulla, tincidunt ornare tortor est vitae magna.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s" aria-hidden="true"></i>
-                    <h3>Dirty Saving</h3>
-                    <p class="text-muted">Praesent faucibus ex a massa lobortis, sed vulputate ligula faucibus. Duis id mauris purus. In rutrum orci in tempor aliquam.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-magic wow bounceIn text-primary" aria-hidden="true"></i>
-                    <h3>Direct Import</h3>
-                    <p class="text-muted">Nulla dictum, diam ac consequat iaculis, purus lacus vehicula enim, vel sodales mi lorem at massa. Sed vitae placerat risus. Ut laoreet lobortis eros, ac ultrices libero mollis ac.</p>
+                    <p class="text-muted">NeoEMF loads model elements only when they are accessed, limiting memory consumption and improving loading execution time.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-database wow bounceIn text-primary" data-wow-delay=".1s" aria-hidden="true"></i>
                     <h3>Multiple Backends</h3>
-                    <p class="text-muted">Sed blandit lobortis dolor at sollicitudin. Nulla dictum, diam ac consequat iaculis, purus lacus vehicula enim, vel sodales mi lorem at massa. Sed vitae placerat risus.</p>
+                    <p class="text-muted">NeoEMF supports many storage solutions. Current version provides implementations for MapDB, Blueprints, Neo4j, and HBase!</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s" aria-hidden="true"></i>
+                    <h3>EMF-API Compliant</h3>
+                    <p class="text-muted">We put a special attention to ensure that calling a NeoEMF method produces the same behavior as standard EMF API calls.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-download wow bounceIn text-primary" data-wow-delay=".2s" aria-hidden="true"></i>
+                    <h3>Auto-Commit</h3>
+                    <p class="text-muted">Each database implementation provides an autocommit feature that regularly saves changes in order to free the memory.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-history wow bounceIn text-primary" data-wow-delay=".1s" aria-hidden="true"></i>
+                    <h3>Caching</h3>
+                    <p class="text-muted">NeoEMF embeds a set of caches that can be turned on/off. Want to cache features, size results, isSet results? We have what you need!</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-magic wow bounceIn text-primary" aria-hidden="true"></i>
+                    <h3>Direct Import</h3>
+                    <p class="text-muted">Importing models from XMI can be painful and costly. That's why we have developped an efficient and scalable XMI parser for you!</p>
                 </div>
             </div>
         </div>
@@ -184,31 +184,31 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-left">
                 <h2>Related Publications</h2>
-                <p>We have made several research publications to present our approach and address specific problems (both conceptual and technical) we faced during the development. You can find here the list of NeoEMF-related publications and the presented slides when they are available. You can also use the BibTex link if you want to cite any of them.</p>
+                <p>We have made several research publications to present our approach and address specific problems (both conceptual and technical) we faced during the development. You can find here the list of NeoEMF-related publications and the presented slides when they are available.</p>
                 <div class="list-group">
                     <div class="list-group-item publications">
                         <h3 class="list-group-item-heading">Neo4EMF, a Scalable Persistence Layer for EMF Models</h3>
-                        <p class="list-group-item-text">A. Benelallam, A. Gómez Llana, G. Sunyé, M. Tisi, and D. Launay. In ECMFA 2014, York, United Kingdom, 2014</p>
+                        <p class="list-group-item-text">A. Benelallam, A. Gómez Llana, G. Sunyé, M. Tisi, and D. Launay. In ECMFA 2014, York, United Kingdom, 2014 (<a href="https://hal.inria.fr/file/index/docid/968516/filename/ECMFA2014-Neo4EMF.pdf" target="_blank">article</a>)</p>
                     </div>
                     <div class="list-group-item publications">
                         <h3 class="list-group-item-heading">Improving Memory Efficiency for Processing Large-Scale Models</h3>
-                        <p class="list-group-item-text">G. Daniel, G. Sunyé, A. Benelallam, and M. Tisi. In BigMDE 2014, York, United Kingdom, 2014</p>
+                        <p class="list-group-item-text">G. Daniel, G. Sunyé, A. Benelallam, and M. Tisi. In BigMDE 2014, York, United Kingdom, 2014 (<a href="http://hal.univ-nantes.fr/file/index/docid/1033188/filename/bigmde14_submission_6_1_.pdf" target="_blank">article</a>)</p>
                     </div>
                     <div class="list-group-item publications">
                         <h3 class="list-group-item-heading">Map-Based Transparent Persistence for Very Large Models</h3>
-                        <p class="list-group-item-text">A. Gómez Llana, M. Tisi, G. Sunyé, and J. Cabot. In FASE 2015, London, United Kingdom, 2015</p>
+                        <p class="list-group-item-text">A. Gómez Llana, M. Tisi, G. Sunyé, and J. Cabot. In FASE 2015, London, United Kingdom, 2015 (<a href="https://hal.inria.fr/hal-01140776/document" target="_blank">article</a>, <a href="http://www.slideshare.net/abgolla/fase-2015-mapbased-transparent-persistence-for-very-large-models?qid=3022993e-ae10-43ea-a734-81bb2dbe9f0b&v=&b=&from_search=1" target="_blank">slides</a>)</p>
                     </div>
                     <div class="list-group-item publications">
                         <h3 class="list-group-item-heading">Mogwaï: a Framework to Handle Complex Queries on Large Models</h3>
-                        <p class="list-group-item-text">G. Daniel, G. Sunyé, and J. Cabot. In RCIS 2016, Grenoble, France, 2016</p>
+                        <p class="list-group-item-text">G. Daniel, G. Sunyé, and J. Cabot. In RCIS 2016, Grenoble, France, 2016 (<a href="https://hal.archives-ouvertes.fr/hal-01344019/file/document.pdf" target="_blank">article</a>, <a href="http://www.slideshare.net/g__daniel/mogwa-a-framework-to-handle-complex-queries-on-large-models" target="_blank">slides</a>, <a href="http://modeling-languages.com/mogwai-querying-large-models-ocl-nosql-graphdb/" target="_blank">blog post</a>)</p>
                     </div>
                     <div class="list-group-item publications">
                         <h3 class="list-group-item-heading">PrefetchML: a Framework for Prefetching and Caching Models</h3>
-                        <p class="list-group-item-text">G. Daniel, G. Sunyé, and J. Cabot. In MoDELS 2016, Saint-Malo, France</p>
+                        <p class="list-group-item-text">G. Daniel, G. Sunyé, and J. Cabot. In MoDELS 2016, Saint-Malo, France (<a href="https://hal.archives-ouvertes.fr/hal-01362149/document" target="_blank">article</a>, <a href="http://www.slideshare.net/g__daniel/slide-prefetch" target="_blank">slides</a>, <a href="http://modeling-languages.com/prefetchml-dsl-prefetching-caching-emf-models/" target="_blank">blog post</a>)</p>
                     </div>
                     <div class="list-group-item publications">
                         <h3 class="list-group-item-heading">NeoEMF: a Multi-Database Model Persistence Framework for Very Large Models</h3>
-                        <p class="list-group-item-text">G. Daniel, G. Sunyé, A. Benelallam, M. Tisi, Y. Vernageau, A. Gómez Llana, and J. Cabot. In MoDELS 2016 (Tool Demo Track), Saint-Malo, France, 2016</p>
+                        <p class="list-group-item-text">G. Daniel, G. Sunyé, A. Benelallam, M. Tisi, Y. Vernageau, A. Gómez Llana, and J. Cabot. In MoDELS 2016 (Tool Demo Track), Saint-Malo, France, 2016 (<a href="http://ceur-ws.org/Vol-1725/demo1.pdf" target="_blank">article</a>, <a href="http://www.slideshare.net/g__daniel/slide-neoemf" target="_blank">slides</a>, <a href="http://modeling-languages.com/neoemf-nosql-database-model-persistence/" target="_blank">blog posts</a>)</p>
                     </div>
                 </div>
             </div>
@@ -222,7 +222,7 @@
             <div class="col-lg-10 col-lg-offset-1 text-center">
                 <h2 class="section-heading">Who Is Behind NeoEMF?</h2>
                 <hr class="primary">
-                <p>NeoEMF is a project maintained by <a href="http://web.emn.fr/x-info/atlanmod/index.php?title=Main_Page">AtlanMod Team</a> and <a href="http://som-research.uoc.edu/">SOM-Research Lab</a>.</p>
+                <p>NeoEMF is a project maintained by <a href="http://web.emn.fr/x-info/atlanmod/index.php?title=Main_Page" target="_blank">AtlanMod Team</a> and <a href="http://som-research.uoc.edu/" target="_blank">SOM-Research Lab</a>.</p>
                 <div class="col-lg-6 text-center">
                     <a href="http://web.emn.fr/x-info/atlanmod/index.php?title=Main_Page" target="_blank"><img src="img/atlanmod.svg" height="50px"></a>
                 </div>
@@ -243,7 +243,7 @@
             </div>
         </div>
         <div class="col-lg-3 col-lg-offset-1 text-center">
-            <a href="https://www.twitter.com/NeoEMF">
+            <a href="https://www.twitter.com/NeoEMF" target="_blank">
                 <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                 <p>NeoEMF</p>
             </a>
@@ -255,7 +255,7 @@
             </a>
         </div>
         <div class="col-lg-3 col-lg-offset-0 text-center">
-            <a href="https://www.github.com/atlanmod/NeoEMF">
+            <a href="https://www.github.com/atlanmod/NeoEMF" target="_blank">
             <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                 <p>atlanmod/NeoEMF</p>
             </a>
