@@ -343,6 +343,12 @@ header {
     }
 }
 
+// About
+
+#about a {
+    color: $theme-dark;
+}
+
 // Contact
 .contact .fa {
     color: $theme-dark;
