@@ -1,9 +1,9 @@
 ### Jekyll
 .sass-cache
 _site
-*.lock
-/Gemfile
-/README.md
+Gemfile
+Gemfile.lock
+/*.md
 
 ### IntelliJ
 .idea
