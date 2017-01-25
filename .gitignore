@@ -2,6 +2,8 @@
 .sass-cache
 _site
 *.lock
+/Gemfile
+/README.md
 
 ### IntelliJ
 .idea
