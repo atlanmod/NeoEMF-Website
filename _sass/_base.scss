@@ -159,8 +159,10 @@ header {
     width: 100%;
     min-height: auto;
     @include background-cover;
-    background-position: center;
-    background-image: url('../img/header.jpg');
+    background: #212d39;
+    background-position: top left;
+    background-image: url('../img/header.svg');
+    background-repeat: no-repeat;
     text-align: center;
     color: white;
     .header-content {
