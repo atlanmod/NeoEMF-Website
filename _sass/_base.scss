@@ -157,12 +157,12 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
     @include background-cover;
     background: #212d39;
-    background-position: top left;
+    background-position: top center;
     background-image: url('../img/header.svg');
     background-repeat: no-repeat;
+    background-size: 1920px 700px;
     text-align: center;
     color: white;
     .header-content {
@@ -337,7 +337,7 @@ header {
 
 .btn-extlink {
     width: 140px;
-    padding: 15px 0px;
+    padding: 15px 0;
     img {
         vertical-align: top;
         margin-right: 5px;
