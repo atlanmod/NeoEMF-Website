@@ -97,8 +97,8 @@ header .header-content .header-content-inner p { font-weight: 300; color: rgba(2
 
 .btn-xl { padding: 15px 30px; }
 
-.btn-extlink { width: 140px; padding: 15px 0; }
-.btn-extlink img { vertical-align: top; margin-right: 5px; height: 20px; }
+.btn-extlink { padding: 15px 15px; }
+.btn-extlink img { vertical-align: top; margin-right: 10px; height: 20px; }
 
 #about a { color: #2F2F2F; }
 
@@ -118,7 +118,7 @@ body { -webkit-tap-highlight-color: #2F2F2F; }
 #publications .list-group-item-heading { font-size: 22px; font-weight: 600; }
 #publications .list-group-item-text { font-size: 14px; }
 
-#team { background-color: #EFEFEF; }
+#credits { background-color: #EFEFEF; }
 
 .row + .row { margin-top: 20px; }
 
