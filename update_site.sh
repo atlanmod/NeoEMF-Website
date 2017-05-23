@@ -23,3 +23,5 @@ git add -A
 git commit -m "update website from master"
 
 git checkout master
+
+echo "Done, please check the content of the gh-pages branch before pushing it"
