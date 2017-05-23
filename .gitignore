@@ -8,3 +8,7 @@ Gemfile.lock
 ### IntelliJ
 .idea
 *.iml
+
+### Bash
+
+update_site.sh
