@@ -5,14 +5,14 @@ cp -r _site /tmp/_site
 git checkout gh-pages
 
 echo "Deleting Previous Build"
-rm -rf css img js static vendor CNAME LICENCE index.html
+#rm -rf css img js static vendor CNAME LICENCE index.html
 
-echo "Updating Build"
-mv /tmp/_site/* .
-rm -rf /tmp/_site
+#echo "Updating Build"
+#mv /tmp/_site/* .
+#rm -rf /tmp/_site
 
-echo "Committing changes"
-git add -A
-git commit -m "update website from master"
+#echo "Committing changes"
+#git add -A
+#git commit -m "update website from master"
 
-git checkout master
+#git checkout master
