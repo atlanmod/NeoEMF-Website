@@ -4,7 +4,7 @@ echo "Updating NeoEMF Website"
 cp -r _site /tmp/_site
 git checkout gh-pages
 res=$?
-if [ res != 0 ]
+if [ $res != 0 ]
 then
 	echo "You have uncommitted changes on master, please commit your changes
 	before updating the website"
