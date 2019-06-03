@@ -3,8 +3,8 @@ title: NeoEMF
 email: neoemf@googlegroups.com
 description: NeoEMF website
 baseurl: ""
-url: http://www.neoemf.com
-repository: atlanmod/NeoEMF
+url: http://neoemf.github.io
+repository: neoemf/neoemf.github.io
 
 twitter_username: NeoEMF
 github_username: atlanmod/NeoEMF
