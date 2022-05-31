@@ -18,6 +18,6 @@ jobs:
       - name: Generate Antora Site
         run: npm run build
       - name: Show contents
-        run: ls -al ./public
+        run: ls -al ./doc
 	  - name: Tell Jekyll to ignore Antora files
-	    run: touch public/.nojekyll
+	    run: touch doc/.nojekyll
