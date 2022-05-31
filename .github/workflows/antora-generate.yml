@@ -3,10 +3,6 @@ name: Antora Site Build
 on:
   push:
     branches: [ master ]
-	  
-defaults:
-  run:
-    working-directory: ./neoemf-doc
 
 jobs:
   antora-run:
