@@ -19,3 +19,5 @@ jobs:
         run: npm run build
       - name: Show contents
         run: ls -al ./public
+	  - name: Tell Jekyll to ignore Antora files
+	    run: touch public/.nojekyll
