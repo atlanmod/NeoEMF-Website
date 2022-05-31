@@ -1,6 +1,6 @@
 site:
   title: NeoEMF - Website
-  url: https://atlanmod.univ-nantes.io/neoemf/
+  url: https://neoemf.atlanmod.org/
   start_page: NeoEMF:ROOT:index.adoc
 asciidoc:
   attributes:
@@ -9,13 +9,19 @@ asciidoc:
     - asciidoctor-plantuml
 content:
   sources:
-    - url: ../
+    - url: git@github.com:atlanmod/NeoEMF.git
       branches: HEAD, main
       start_path: neoemf-doc
 ui:
   bundle:
     url: https://gitlab.univ-nantes.fr/sunye-g/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
+  supplemental_files:
+  - path: ui.yml
+    contents: |
+      static_files:
+      - .nojekyll
+  - path: .nojekyll
 runtime:
   cache_dir: ./.cache/antora
 output:

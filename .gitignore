@@ -7,3 +7,6 @@ _site/
 .idea
 *.iml
 
+.cache/
+node_modules/
+public/
