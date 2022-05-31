@@ -2,7 +2,7 @@ name: Antora Site Build
 
 on:
   push:
-	  branches: [ master ]
+    branches: [ master ]
 	  
 defaults:
   run:
